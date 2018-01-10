@@ -23,6 +23,7 @@ h3 {
   color: green;
   font-size: 50px;
   font-weight: bold;
+  margin: 10px;
 }
 
 p {
@@ -33,16 +34,29 @@ p {
 ol {
   display: block;
   list-style-type: decimal;
+  padding-left: 10px;
+  list-style-position: inside;
+  font-size: 20px;
 }
 
 ul {
   display: block;
   list-style-type: disc;
+  padding-left: 20px;
+  list-style-position: inside;
+  font-size: 20px;
 }
+
 .question {
   color: blue;
 }
 
 .answer {
   color: purple;
+  padding-left: 20px;
+}
+
+.top-ten {
+  color: blue;
+  padding-left: 10px;
 }

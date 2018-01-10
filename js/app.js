@@ -1,5 +1,8 @@
 'use strict';
 
+//tally to keep track of # of correct answers
+var tally = 0;
+
 var userName = prompt('Hi, what is your name?');
 console.log('user\s name is ' + userName)
 alert('Hello ' + userName + '! Let\'s play a Game.');
@@ -7,6 +10,7 @@ alert('Hello ' + userName + '! Let\'s play a Game.');
 var city = prompt('Do you think I live in Seattle? (y/n)').toLowerCase();
 console.log('For city, user entered: ' + city);
 if (city === 'y') {
+  tally++;
   alert('Yes I do live in Seattle!');
 } else if (city === 'n') {
   alert('Sorry you are incorrect.');
@@ -17,6 +21,7 @@ if (city === 'y') {
 var pets = prompt('Do I have any pets? (Y/N)').toUpperCase();
 console.log('For pets, user entered: ' + pets);
 if (pets === 'Y') {
+  tally++;
   alert('Yes, I have a dog named Whiskey!');
 } else if (pets === 'N') {
   alert('Sorry you are incorrect. I have a dog.');
@@ -27,6 +32,7 @@ if (pets === 'Y') {
 var car = prompt('Do I drive an awesome car? (YES/NO)').toUpperCase();
 console.log('For car, user entered: ' + car);
 if (car === 'YES') {
+  tally++;
   alert('Yes, I have a Honda Civic!');
 } else if (car === 'NO') {
   alert('Sorry you guessed wrong.');
@@ -39,6 +45,7 @@ console.log('For veg, user entered: ' + veg);
 if (veg === 'yes') {
   alert('Nope! I love me some meat!');
 } else if (veg === 'no') {
+  tally++;
   alert('Ding! Ding! Ding! We have a winner!');
 } else {
   alert('Please enter yes or no');
@@ -47,6 +54,7 @@ if (veg === 'yes') {
 var cf = prompt('Do I love Code Fellows? (y/n)').toLowerCase();
 console.log('For CF, user entered: ' + cf);
 if (cf === 'y') {
+  tally++;
   alert('Yes, of course I love Code Fellows!');
 } else if (cf === 'n') {
   alert('Is that your final answer?');
@@ -60,6 +68,7 @@ do {
   counter++;
   if (numGuess === favNumber) {
     alert('Good guess! You got it!');
+    tally++;
     flag = true;
   } else if (counter > 3) {
     alert('Sorry, you are out of guesses.');
@@ -78,6 +87,7 @@ do {
   for (var i = 0; i < state.length; i++) {
     if (stateGuess === state[i]) {
       alert('Yes I did live in ' + state[i]);
+      tally++;
       flag = true;
       break;
     } 
@@ -88,3 +98,5 @@ do {
   }
 } while (flag === false);
 alert('The other states I have lived in are California and New Jersey.');
+
+alert('Great job ' + userName + '! You got ' + tally + ' out of 7 questions correct.');
