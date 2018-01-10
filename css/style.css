@@ -2,6 +2,7 @@ body {
   background-color: coral;
   font-family: Arial;
   margin: 15px; 
+  padding: 15px;
 }
 
 h1 {
@@ -23,10 +24,21 @@ h3 {
   font-size: 50px;
   font-weight: bold;
 }
+
 p {
-  font-size: 30px;
+  font-size: 20px;
+  padding: 5px;
 }
 
+ol {
+  display: block;
+  list-style-type: decimal;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+}
 .question {
   color: blue;
 }
