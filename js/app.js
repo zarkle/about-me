@@ -70,3 +70,21 @@ do {
     alert('Sorry, your guess is too low. Try again.')
   }
 } while (flag === false);
+
+var state = ['New Jersey', 'California'], counter = 0, flag = false;
+do {
+  var stateGuess = prompt('Can you guess a state that I have lived in besides Washington? You have 6 guesses. Please use proper capitalization.');
+  counter++;
+  for (var i = 0; i < state.length; i++) {
+    if (stateGuess === state[i]) {
+      alert('Yes I did live in ' + state[i]);
+      flag = true;
+      break;
+    } 
+  }
+  if (counter > 5) {
+    alert('Sorry, you are out of guesses.');
+    flag = true;
+  }
+} while (flag === false);
+alert('The other states I have lived in are California and New Jersey.');
