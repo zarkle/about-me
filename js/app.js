@@ -2,14 +2,14 @@
 
 var userName = prompt('Hi, what is your name?');
 console.log('user\s name is ' + userName)
-alert('Hello ' + userName + '! Let\'s play a Game');
+alert('Hello ' + userName + '! Let\'s play a Game.');
 
 var city = prompt('Do you think I live in Seattle? (y/n)').toLowerCase();
 console.log('For city, user entered: ' + city);
 if (city === 'y') {
   alert('Yes I do live in Seattle!');
 } else if (city === 'n') {
-  alert('Sorry you are incorrect');
+  alert('Sorry you are incorrect.');
 } else {
   alert('Please enter y or n');
 }
@@ -53,3 +53,20 @@ if (cf === 'y') {
 } else {
   alert('Please enter y or n');
 }
+
+var favNumber = 7, counter = 0, flag = false;
+do {
+  var numGuess = parseInt(prompt('What do you think my favorite number is? You will have 4 guesses.'));
+  counter++;
+  if (numGuess === favNumber) {
+    alert('Good guess! You got it!');
+    flag = true;
+  } else if (counter > 3) {
+    alert('Sorry, you are out of guesses.');
+    flag = true;
+  } else if (numGuess > favNumber) {
+    alert('Sorry, your guess is too high. Try again.');
+  } else {
+    alert('Sorry, your guess is too low. Try again.')
+  }
+} while (flag === false);
