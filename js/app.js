@@ -22,15 +22,17 @@ function city() {
   }
 }
 
-var pets = prompt('Do I have any pets? (Y/N)').toUpperCase();
-console.log('For pets, user entered: ' + pets);
-if (pets === 'Y') {
-  tally++;
-  alert('Yes, I have a dog named Whiskey!');
-} else if (pets === 'N') {
-  alert('Sorry you are incorrect. I have a dog.');
-} else {
-  alert('Please enter Y or N');
+function pets() {
+  var pets = prompt('Do I have any pets? (Y/N)').toUpperCase();
+  console.log('For pets, user entered: ' + pets);
+  if (pets === 'Y') {
+    tally++;
+    alert('Yes, I have a dog named Whiskey!');
+  } else if (pets === 'N') {
+    alert('Sorry you are incorrect. I have a dog.');
+  } else {
+    alert('Please enter Y or N');
+  }
 }
 
 var car = prompt('Do I drive an awesome car? (YES/NO)').toUpperCase();
@@ -110,3 +112,4 @@ alert('Great job ' + userName + '! You got ' + tally + ' out of 7 questions corr
 
 userName();
 city();
+pets();
