@@ -1,10 +1,10 @@
-'use strict';
+// 'use strict';
 
 //tally to keep track of # of correct answers
 var tally = 0;
 
 var userName = prompt('Hi, what is your name?');
-console.log('user\s name is ' + userName)
+console.log('user\'s name is ' + userName)
 alert('Hello ' + userName + '! Let\'s play a Game.');
 
 var city = prompt('Do you think I live in Seattle? (y/n)').toLowerCase();
