@@ -1,6 +1,6 @@
 'use strict';
 
-tally to keep track of # of correct answers
+// tally to keep track of # of correct answers
 var tally = 0, flag = false, counter = 0;
 
 function userName() {
@@ -48,15 +48,17 @@ function car() {
   }
 }
 
-var veg = prompt('Am I a vegetarian? (yes/no)').toLowerCase();
-console.log('For veg, user entered: ' + veg);
-if (veg === 'yes') {
-  alert('Nope! I love me some meat!');
-} else if (veg === 'no') {
-  tally++;
-  alert('Ding! Ding! Ding! We have a winner!');
-} else {
-  alert('Please enter yes or no');
+function veg() {
+  var veg = prompt('Am I a vegetarian? (yes/no)').toLowerCase();
+  console.log('For veg, user entered: ' + veg);
+  if (veg === 'yes') {
+    alert('Nope! I love me some meat!');
+  } else if (veg === 'no') {
+    tally++;
+    alert('Ding! Ding! Ding! We have a winner!');
+  } else {
+    alert('Please enter yes or no');
+  }
 }
 
 var cf = prompt('Do I love Code Fellows? (y/n)').toLowerCase();
@@ -116,3 +118,4 @@ userName();
 city();
 pets();
 car();
+veg();
