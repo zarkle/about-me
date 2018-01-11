@@ -4,7 +4,7 @@
 var tally = 0;
 
 var userName = prompt('Hi, what is your name?');
-console.log('user\'s name is ' + userName)
+console.log('user\'s name is ' + userName);
 alert('Hello ' + userName + '! Let\'s play a Game.');
 
 var city = prompt('Do you think I live in Seattle? (y/n)').toLowerCase();
@@ -76,11 +76,13 @@ do {
   } else if (numGuess > favNumber) {
     alert('Sorry, your guess is too high. Try again.');
   } else {
-    alert('Sorry, your guess is too low. Try again.')
+    alert('Sorry, your guess is too low. Try again.');
   }
 } while (flag === false);
 
-var state = ['New Jersey', 'California'], counter = 0, flag = false;
+var state = ['New Jersey', 'California'];
+counter = 0;
+flag = false;
 do {
   var stateGuess = prompt('Can you guess a state that I have lived in besides Washington? You have 6 guesses. Please use proper capitalization.');
   counter++;
@@ -90,7 +92,7 @@ do {
       tally++;
       flag = true;
       break;
-    } 
+    }
   }
   if (counter > 5) {
     alert('Sorry, you are out of guesses.');
