@@ -1,6 +1,6 @@
 'use strict';
 
-//tally to keep track of # of correct answers
+tally to keep track of # of correct answers
 var tally = 0, flag = false, counter = 0;
 
 function userName() {
@@ -35,15 +35,17 @@ function pets() {
   }
 }
 
-var car = prompt('Do I drive an awesome car? (YES/NO)').toUpperCase();
-console.log('For car, user entered: ' + car);
-if (car === 'YES') {
-  tally++;
-  alert('Yes, I have a Honda Civic!');
-} else if (car === 'NO') {
-  alert('Sorry you guessed wrong.');
-} else {
-  alert('Please enter YES or NO');
+function car() {
+  var car = prompt('Do I drive an awesome car? (YES/NO)').toUpperCase();
+  console.log('For car, user entered: ' + car);
+  if (car === 'YES') {
+    tally++;
+    alert('Yes, I have a Honda Civic!');
+  } else if (car === 'NO') {
+    alert('Sorry you guessed wrong.');
+  } else {
+    alert('Please enter YES or NO');
+  }
 }
 
 var veg = prompt('Am I a vegetarian? (yes/no)').toLowerCase();
@@ -113,3 +115,4 @@ alert('Great job ' + userName + '! You got ' + tally + ' out of 7 questions corr
 userName();
 city();
 pets();
+car();
