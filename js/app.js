@@ -61,15 +61,17 @@ function veg() {
   }
 }
 
-var cf = prompt('Do I love Code Fellows? (y/n)').toLowerCase();
-console.log('For CF, user entered: ' + cf);
-if (cf === 'y') {
-  tally++;
-  alert('Yes, of course I love Code Fellows!');
-} else if (cf === 'n') {
-  alert('Is that your final answer?');
-} else {
-  alert('Please enter y or n');
+function cf() {
+  var cf = prompt('Do I love Code Fellows? (y/n)').toLowerCase();
+  console.log('For CF, user entered: ' + cf);
+  if (cf === 'y') {
+    tally++;
+    alert('Yes, of course I love Code Fellows!');
+  } else if (cf === 'n') {
+    alert('Is that your final answer?');
+  } else {
+    alert('Please enter y or n');
+  }
 }
 
 var favNumber = 7; 
@@ -119,3 +121,4 @@ city();
 pets();
 car();
 veg();
+cf();
