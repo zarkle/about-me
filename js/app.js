@@ -95,26 +95,28 @@ function favNumber() {
   } while (flag === false);
 }
 
-var state = ['New Jersey', 'California'];
-counter = 0;
-flag = false;
-do {
-  var stateGuess = prompt('Can you guess a state that I have lived in besides Washington? You have 6 guesses. Please use proper capitalization.');
-  counter++;
-  for (var i = 0; i < state.length; i++) {
-    if (stateGuess === state[i]) {
-      alert('Yes I did live in ' + state[i]);
-      tally++;
-      flag = true;
-      break;
+function state() {
+  var state = ['New Jersey', 'California'];
+  counter = 0;
+  flag = false;
+  do {
+    var stateGuess = prompt('Can you guess a state that I have lived in besides Washington? You have 6 guesses. Please use proper capitalization.');
+    counter++;
+    for (var i = 0; i < state.length; i++) {
+      if (stateGuess === state[i]) {
+        alert('Yes I did live in ' + state[i]);
+        tally++;
+        flag = true;
+        break;
+      }
     }
-  }
-  if (counter > 5) {
-    alert('Sorry, you are out of guesses.');
-    flag = true;
-  }
-} while (flag === false);
-alert('The other states I have lived in are California and New Jersey.');
+    if (counter > 5) {
+      alert('Sorry, you are out of guesses.');
+      flag = true;
+    }
+  } while (flag === false);
+  alert('The other states I have lived in are California and New Jersey.');
+}
 
 alert('Great job ' + userName + '! You got ' + tally + ' out of 7 questions correct.');
 
@@ -125,3 +127,4 @@ car();
 veg();
 cf();
 favNumber();
+state();
