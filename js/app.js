@@ -1,15 +1,15 @@
 'use strict';
 
 // tally to keep track of # of correct answers
-var tally = 0, flag = false, counter = 0;
+var tally = 0, flag = false, counter = 0, userName;
 
-function userName() {
+function getUserName() {
   var userName = prompt('Hi, what is your name?');
   console.log('user\'s name is ' + userName);
   alert('Hello ' + userName + '! Let\'s play a Game.');
 }
 
-function city() {
+function guessCity() {
   var city = prompt('Do you think I live in Seattle? (y/n)').toLowerCase();
   console.log('For city, user entered: ' + city);
   if (city === 'y') {
@@ -22,7 +22,7 @@ function city() {
   }
 }
 
-function pets() {
+function guessPets() {
   var pets = prompt('Do I have any pets? (Y/N)').toUpperCase();
   console.log('For pets, user entered: ' + pets);
   if (pets === 'Y') {
@@ -35,7 +35,7 @@ function pets() {
   }
 }
 
-function car() {
+function guessCar() {
   var car = prompt('Do I drive an awesome car? (YES/NO)').toUpperCase();
   console.log('For car, user entered: ' + car);
   if (car === 'YES') {
@@ -48,7 +48,7 @@ function car() {
   }
 }
 
-function veg() {
+function guessVeg() {
   var veg = prompt('Am I a vegetarian? (yes/no)').toLowerCase();
   console.log('For veg, user entered: ' + veg);
   if (veg === 'yes') {
@@ -61,7 +61,7 @@ function veg() {
   }
 }
 
-function cf() {
+function guessCf() {
   var cf = prompt('Do I love Code Fellows? (y/n)').toLowerCase();
   console.log('For CF, user entered: ' + cf);
   if (cf === 'y') {
@@ -74,7 +74,7 @@ function cf() {
   }
 }
 
-function favNumber() {
+function guessFavNumber() {
   var favNumber = 7; 
   counter = 0;
   do {
@@ -95,7 +95,7 @@ function favNumber() {
   } while (flag === false);
 }
 
-function state() {
+function guessState() {
   var state = ['New Jersey', 'California'];
   counter = 0;
   flag = false;
@@ -118,13 +118,13 @@ function state() {
   alert('The other states I have lived in are California and New Jersey.');
 }
 
-alert('Great job ' + userName + '! You got ' + tally + ' out of 7 questions correct.');
+getUserName();
+guessCity();
+guessPets();
+guessCar();
+guessVeg();
+guessCf();
+guessFavNumber();
+guessState();
 
-userName();
-city();
-pets();
-car();
-veg();
-cf();
-favNumber();
-state();
+alert('Great job ' + userName + '! You got ' + tally + ' out of 7 questions correct.');
