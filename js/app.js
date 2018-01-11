@@ -74,24 +74,26 @@ function cf() {
   }
 }
 
-var favNumber = 7; 
-counter = 0;
-do {
-  var numGuess = parseInt(prompt('What do you think my favorite number is? You will have 4 guesses.'));
-  counter++;
-  if (numGuess === favNumber) {
-    alert('Good guess! You got it!');
-    tally++;
-    flag = true;
-  } else if (counter > 3) {
-    alert('Sorry, you are out of guesses.');
-    flag = true;
-  } else if (numGuess > favNumber) {
-    alert('Sorry, your guess is too high. Try again.');
-  } else {
-    alert('Sorry, your guess is too low. Try again.');
-  }
-} while (flag === false);
+function favNumber() {
+  var favNumber = 7; 
+  counter = 0;
+  do {
+    var numGuess = parseInt(prompt('What do you think my favorite number is? You will have 4 guesses.'));
+    counter++;
+    if (numGuess === favNumber) {
+      alert('Good guess! You got it!');
+      tally++;
+      flag = true;
+    } else if (counter > 3) {
+      alert('Sorry, you are out of guesses.');
+      flag = true;
+    } else if (numGuess > favNumber) {
+      alert('Sorry, your guess is too high. Try again.');
+    } else {
+      alert('Sorry, your guess is too low. Try again.');
+    }
+  } while (flag === false);
+}
 
 var state = ['New Jersey', 'California'];
 counter = 0;
@@ -122,3 +124,4 @@ pets();
 car();
 veg();
 cf();
+favNumber();
