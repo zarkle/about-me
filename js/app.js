@@ -4,7 +4,7 @@
 var tally = 0, flag = false, counter = 0, userName;
 
 function getUserName() {
-  var userName = prompt('Hi, what is your name?');
+  userName = prompt('Hi, what is your name?');
   console.log('user\'s name is ' + userName);
   alert('Hello ' + userName + '! Let\'s play a Game.');
 }
@@ -75,7 +75,7 @@ function guessCf() {
 }
 
 function guessFavNumber() {
-  var favNumber = 7; 
+  var favNumber = 7;
   counter = 0;
   do {
     var numGuess = parseInt(prompt('What do you think my favorite number is? You will have 4 guesses.'));
@@ -109,6 +109,9 @@ function guessState() {
         flag = true;
         break;
       }
+    }
+    if (flag === false) {
+      alert('Sorry, try again.');
     }
     if (counter > 5) {
       alert('Sorry, you are out of guesses.');
