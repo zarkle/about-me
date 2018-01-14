@@ -5,7 +5,7 @@ body {
   padding: 15px;
 }
 
-h1 {
+h1, h2, h3 {
   color: green;
   font-size: 100px;
   font-weight: bold;
@@ -13,17 +13,13 @@ h1 {
 }
 
 h2 {
-  color: green;
   font-size: 70px;
-  font-weight: bold;
-  text-align: center;
 }
 
 h3 {
-  color: green;
   font-size: 50px;
-  font-weight: bold;
   margin: 10px;
+  text-align: left;
 }
 
 p {
@@ -31,20 +27,17 @@ p {
   padding: 5px;
 }
 
-ol {
+ol, ul {
   display: block;
-  list-style-type: decimal;
-  padding-left: 10px;
   list-style-position: inside;
+  list-style-type: decimal;
   font-size: 20px;
+  padding-left: 10px;
 }
 
 ul {
-  display: block;
   list-style-type: disc;
   padding-left: 20px;
-  list-style-position: inside;
-  font-size: 20px;
 }
 
 .question {

@@ -77,6 +77,7 @@ function guessCf() {
 function guessFavNumber() {
   var favNumber = 7;
   counter = 0;
+  flag = false;
   do {
     var numGuess = parseInt(prompt('What do you think my favorite number is? You will have 4 guesses.'));
     counter++;

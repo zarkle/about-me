@@ -1,12 +1,10 @@
 # about-me
-Week 1 About Me project for Code Fellows Code 201 course.
+This is the Week 1 About Me project for Code Fellows Code 201 course.
 
 Used Meyer Web for CSS reset.
 
 Used MDN for CSS style properties. Used it for list style properties. 
 
-Pair programmed with Zachary Schumpert to make the questions into functions.
+Pair programmed with Zachary Schumpert to make the questions into functions (day 4 lab).
 
-To fix:
-Fix CSS to combine styles
-fix OL to change </li> to end of answer paragraph
+Used https://www.canva.com/learn/website-color-schemes/ for Color Scheme (5. Neon Tones and Sharp Contrast).
